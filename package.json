@@ -105,7 +105,7 @@
     "node": ">= 6"
   },
   "scripts": {
-    "prepare": "npm run babel",
+    "prepare": "npm run babel && npm run css && npm run tsd",
     "babel": "babel ./components --out-dir ./lib",
     "build": "cross-env NODE_ENV=production gulp",
     "clean": "rimraf ./lib",
